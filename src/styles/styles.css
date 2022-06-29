@@ -1,0 +1,102 @@
+@import "./reset.css";
+@import "./livestream-section.css";
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+
+/*Senchigami Color: #00aeef*/
+body {
+  background-color: #0d0d0d;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.creator-container {
+  position: relative;
+  height: 286px;
+  width: 343px;
+  margin: 40px auto;
+}
+
+/* .creator-container:hover .creator-name-card{
+  background-color: #00aeef;
+}
+
+.creator-container:hover .creator-name-card p{
+  background-color: #00aeef;
+  color: white;
+} */
+
+.creator-name-card > p {
+  width: min-content;
+  margin: 10px;
+  font-size: 22px;
+  font-family: "Syncopate", sans-serif;
+}
+
+.creator-name-card {
+  position: absolute;
+  text-align: left;
+  border-radius: 5px;
+  width: 343px;
+  background-color: white;
+  height: 286px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transition-delay: 200ms;
+}
+
+.creator-container:hover > .creator-name-card {
+  background-color: #00aeef;
+  color: white;
+}
+
+.creator-tag {
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  height: 224px;
+  width: 390px;
+  background: linear-gradient(
+    to right,
+    rgba(230, 230, 230, 0.6) 50%,
+    rgba(0, 174, 239, 0.6) 50%
+  );
+  background-size: 200%, 100%;
+  background-position: right;
+  transition: all 0.3s ease;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 30% 100%, 0% 48%, 0% 0%);
+}
+
+.creator-tag-hover {
+  background-position: left;
+}
+
+/* @keyframes hoverCreator{
+  from {
+    color: black;
+    background-color: white;
+  }
+  to{
+    color: white;
+    background-color: #00aeef
+  }
+}
+
+.creator-name-card-hover {
+  animation-name: hoverCreator;
+  animation-duration: 
+  animation-fill-mode: forwards;
+} */
+
+/* #creator-name-card-p-hover {
+  color: white;
+  background-color: #00aeef;
+} */
+
+/* .creator-name-card:hover {
+  color: white;
+  background-color: #00aeef;
+} */
