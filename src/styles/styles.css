@@ -12,21 +12,19 @@ body {
   text-align: center;
 }
 
+.navigation-bar{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: blue;
+}
+
 .creator-container {
   position: relative;
   height: 286px;
   width: 343px;
   margin: 40px auto;
 }
-
-/* .creator-container:hover .creator-name-card{
-  background-color: #00aeef;
-}
-
-.creator-container:hover .creator-name-card p{
-  background-color: #00aeef;
-  color: white;
-} */
 
 .creator-name-card > p {
   width: min-content;
@@ -74,29 +72,19 @@ body {
   background-position: left;
 }
 
-/* @keyframes hoverCreator{
-  from {
-    color: black;
-    background-color: white;
-  }
-  to{
-    color: white;
-    background-color: #00aeef
-  }
+.sign-in-form{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 10%;
+  text-align: left;
 }
 
-.creator-name-card-hover {
-  animation-name: hoverCreator;
-  animation-duration: 
-  animation-fill-mode: forwards;
-} */
+.sign-in-form > input{
+  border: 1px solid black;
+}
 
-/* #creator-name-card-p-hover {
-  color: white;
-  background-color: #00aeef;
-} */
-
-/* .creator-name-card:hover {
-  color: white;
-  background-color: #00aeef;
-} */
+.sign-in-section{
+  display: flex;
+  flex-direction: column;
+}

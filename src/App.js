@@ -1,31 +1,15 @@
 import "./styles/styles.css";
-import LivestreamSection from "./components/LivestreamSection";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import SignIn from "./components/SignIn";
 
 export default function App() {
-  const changeColor = (e) => {
-    const currentTarget = e.currentTarget;
-
-    currentTarget.children[1].classList.add("creator-tag-hover");
-  };
-
-  const revertChangeColor = (e) => {
-    const currentTarget = e.currentTarget;
-
-    currentTarget.children[1].classList.remove("creator-tag-hover");
-  };
   return (
     <div className="App">
-      <div
-        className="creator-container"
-        onMouseEnter={changeColor}
-        onMouseLeave={revertChangeColor}
-      >
-        <div className="creator-name-card">
-          <p className="creator-name">creator</p>
-        </div>
-        <div className="creator-tag"></div>
-      </div>
-      <LivestreamSection />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/sign-in" element={<SignIn />} />
+      </Routes>
     </div>
   );
 }
